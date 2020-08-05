@@ -1,14 +1,7 @@
 db.users.insertMany([
     {
-        username: 'a',
-        password: 'a',
-        todos: [
-            {
-                id: uuid,
-                description: '',
-                date: '',
-                isComplete: false
-            }
-        ]
+        username: 'chen',
+        password: '$2b$10$QTohpTR85CJgJmKelxAv/uEPz9UzTQUCXI028QOXdSfdjw7XT8566', // hash of '123'
+        todos: []
     }
 ])
