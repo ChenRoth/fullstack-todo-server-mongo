@@ -4,8 +4,8 @@ TODO API node server with MySQL
 
 ## Instructions
 
-* Open `src/setup.sql` in MySQL Workbench and execute the script to import the database
-* Set your MySQL credentials in `src/db/sql.ts`
+* Run `mongo mongodb://localhost:27017/todo-example src/setup.js` in terminal/cmd to import initial data
+* Set your MongoDB credentials in `src/db/db.ts` if needed
 * Make sure you have NodeJS v10 or newer installed
 * Type `npm i`
 * Set a JWT secret by typing `SET JWT_SECRET=<secret>`
