@@ -6,6 +6,15 @@ const { JWT_SECRET = 'secret' } = process.env;
 
 const usersRouter = Router();
 
+usersRouter.get('/ping', async (req, res) => {
+    const { userId } = (req as any).user;
+    const user = await User.findById(userId);
+    if (!user) {
+        return res.status(401).end();
+    }
+    res.send({username: user.username});
+});
+
 usersRouter.post('/register', async (req, res) => {
     const { username, password, email } = req.body;
     try {
